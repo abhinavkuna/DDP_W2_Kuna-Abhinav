@@ -1,0 +1,24 @@
+---
+title: "DDP_W2_CP"
+author: "Kuna Abhinav 190909072"
+date: "2022-10-07"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## My First Leaflet Map
+Create a leaflet map object.
+```{r cars}
+library(leaflet)
+map <- leaflet() %>% addTiles()
+```
+
+##Add the marker to the map and display the map.
+```{r}
+map %>%
+   addTiles() %>%
+   addMarkers(lat=13.3525, lng=74.7928)
+```
